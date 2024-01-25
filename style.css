@@ -368,7 +368,9 @@ form .btn2{
 }
 /* ----- repsonsive ----  */
 nav .fas{
+    margin-right: 15px;
     display: none;
+    color: #fff;
 }
 
 
@@ -377,7 +379,10 @@ nav .fas{
         background-image: (url());
     }
     .header-text{
-        margin-top: 70%;
+        margin-top: 60%;
+    }
+    .logo{
+        margin-left: 10px;
     }
     nav .fas{
         display: block;
@@ -392,6 +397,7 @@ nav .fas{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: right 0.5s;
     }
     nav ul li{
         display: block;
@@ -399,6 +405,7 @@ nav .fas{
     }
     nav ul .fas{
         position: absolute;
+        color: #fff;
         top: 25px;
         left: 25px;
         cursor: pointer;
