@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cc44f2f33f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Kaarish</span><br>Parameswaran From Canada</h1>
+        </div>
+    </div>
+</div>    
+<!-- -------------About----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profile.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-info">I'm currently in my third year pursuing an advanced diploma in Computer Programming and 
+                Analysis. I have expertise in Python, JavaScript, React.js, C, Java, Android Studio, iOS 
+                app development, MongoDB, and Docker. My coursework includes Data Structures, Algorithms,
+                Machine Learning, Web Development, Full Stack Development, and a Capstone Project. Beyond 
+                academics, I maintain balance with regular workouts at the gym and playing basketball. Coding 
+                isn't just academic for me; it's also a passion and hobby, showcasing my dedication. This 
+                blend of technical skills and diverse interests reflects my commitment to a fulfilling lifestyle.</p>
+               
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('awards')">Awards</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Designing and building websites or web applications</li>
+                        <li><span>App Development</span><br>Building Andriod/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2024</span><br>Computer Programming and Analysis from George Brown College</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="awards">
+                    <ul>
+                        <li><span>Fall 2021</span><br>Dean's Honour List</li>
+                        <li><span>Winter 2022</span><br>Dean's Honour List</li>
+                        <li><span>Fall 2022</span><br>Dean's Honour List</li>
+                        <li><span>Fall 2023</span><br>Dean's Honour List</li>
+                    </ul>
+                </div>              
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------ Services ---------  -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title-ser">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design utilizing HTML, CSS, React.js, and backend technologies like MongoDB and Docker 
+                involves crafting visually engaging and responsive interfaces while leveraging a dynamic 
+                front-end framework and scalable backend infrastructure for seamless user experiences.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Scientist</h2>
+                <p>Data scientists are skilled professionals using statistical, mathematical, and programming 
+                techniques to analyze complex datasets, extract valuable insights, and employ machine learning 
+                algorithms and data visualization tools. They assist organizations in making informed decisions 
+                and optimizing processes by uncovering actionable intelligence from large datasets.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Developers leverage Android Studio for Android apps, iOS for Apple devices, and Flutter for cross-platform 
+                efficiency. This comprehensive approach enables the creation of intuitive and engaging mobile experiences 
+                while optimizing development resources and ensuring compatibility across diverse devices.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----- portfolio -------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title-pro">My Project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/project-1.png">
+                <div class="layer">
+                    <h3>Tic Tac Tao Game</h3>
+                    <p>A Tic-Tac-Toe game implemented in Java with AI functionality offers players an interactive 
+                    and challenging gaming experience. Using Java's versatile programming features, the game provides 
+                    a platform for users to engage in the classic tic-tac-toe competition against an intelligent AI opponent.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project-2.png">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>A weather app developed with React.js and integrated with weather APIs provides users 
+                    with a user-friendly interface to access real-time weather information. Utilizing React.js 
+                    allows for a dynamic and responsive user experience, while the integration of weather APIs 
+                    enables the app to fetch and display up-to-date weather data.</p>
+                    <a href="#https://github.com/kaarishp/WeatherApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project-3.jpg">
+                <div class="layer">
+                    <h3>Data Science</h3>
+                    <p>The data science research project on crime rates involves analyzing diverse datasets to 
+                    identify patterns, contributing factors, and trends in criminal activities. Using statistical 
+                    models and machine learning algorithms, the project aims to understand the spatial and temporal 
+                    distribution of crime by integrating demographic, socioeconomic, and law enforcement data.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/kaarishp?tab=repositories" class="btn"><i class="fa-brands fa-github"></i>     See More</a>
+    </div>
+</div>
+
+<!-- ---- contact -----  -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact">
+                <h1 class="sub-title-contact">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>kingkaarish@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>647-123-5555</p>
+                <div class="social-icons">
+                    <a href="mailto:kingkaarish@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/kaarish-parameswaran-815862265/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/kaarishp"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <!-- ---add resume later -----   -->
+                <a href="" download class="btn btn2">Download Resume</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Kaarish Parameswaran 2024</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
+</body>
+</html>
